@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form</title>
+		<link rel="stylesheet" href="./main.css" />
+	</head>
+	<body>
+		<main>
+			<div class="form-wrapper">
+				<h1>Регистрация</h1>
+				<form id="reg-form" method="POST" class="form register-form">
+					<div class="wrapper-inner">
+						<div class="email">
+							<label class="form-label" for="email">Email</label>
+							<input
+								type="email"
+								name="email"
+								placeholder="Example@domain.com"
+								id="email"
+							/>
+							<div id="email-error" class="error hidden"></div>
+						</div>
+						<div class="mobile">
+							<label class="form-label" for="mobile">Телефон</label>
+							<input
+								type="tel"
+								name="mobile"
+								placeholder="+7 999 999 99 99"
+								id="phone"
+							/>
+							<div id="phone-error" class="error hidden"></div>
+						</div>
+						<div class="text">
+							<label class="form-label" for="text">Текст</label>
+							<input
+								type="text"
+								name="text"
+								placeholder="Some text..."
+								id="text"
+							/>
+							<div id="text-error" class="error hidden"></div>
+						</div>
+					</div>
+					<button
+						id="reg-submit-button"
+						class="button from-button"
+						type="submit"
+					>
+						Зарегистрироваться
+					</button>
+
+					<div id="form-success" class="success hidden"></div>
+
+					<div></div>
+				</form>
+			</div>
+		</main>
+
+		<script src="./main.js"></script>
+	</body>
+</html>
