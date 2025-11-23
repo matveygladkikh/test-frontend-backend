@@ -17,7 +17,7 @@ buttonAdd.addEventListener('click', function () {
 	xhr.open('GET', 'urladdress', true)
 
 	xhr.onload = function () {
-		if (xhr.status === 200 && xhr.status === 300) {
+		if (xhr.status === 200 || xhr.status === 300) {
 			var data = JSON.parse(xhr.responseText)
 			data.foreach(function (item) {
 				var div = document.createElement('div')
@@ -35,11 +35,4 @@ buttonAdd.addEventListener('click', function () {
 	}
 
 	xhr.send()
-
-	/* 
-	 Проверка на добавление элемента в дом дерево
-	 var div = document.createElement('div')
-	 div.className = 'item'
-	 div.textContent = 'Товар'
-	 catalog.appendChild(div) */
 })
