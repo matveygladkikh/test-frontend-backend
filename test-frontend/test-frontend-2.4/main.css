@@ -1,0 +1,24 @@
+.form{
+  display: inline-block;
+  padding: 50px;
+  margin-top: 400px;
+  margin-left: 500px;
+
+  background-color: lightpink;
+
+  border: 2px solid deeppink;
+
+  border-radius: 30px;
+}
+
+.field:not(:last-child){
+  margin-bottom: 20px;
+}
+
+.button1{
+  float: left;
+}
+
+.button2{
+  float: right;
+}
